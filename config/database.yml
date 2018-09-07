@@ -1,11 +1,12 @@
-default: &default
+defaults: &defaults
   adapter: mysql2
-  encoding: utf8
-  database: mysql_test
-  username: root
-  password:
+  pool: 5
   timeout: 5000
-  socket: /tmp/mysql.sock
+  encoding: utf8
+  port: 3306
+  username: <%= ENV['DB_USERNAME'] || 'root' %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  host: <%= ENV['DB_HOST'] || '127.0.0.1' %>  
 
 development:
   <<: *default
