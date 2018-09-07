@@ -1,0 +1,211 @@
+I, [2018-09-07T13:34:07.021381 #32438]  INFO -- : Refreshing Gem list
+bundler: failed to load command: unicorn (/home/ubuntutest1/.rbenv/versions/2.5.0/bin/unicorn)
+NoMethodError: undefined method `halt_callback_chains_on_return_false=' for ActiveSupport:Module
+  /home/ubuntutest1/RoR/config/initializers/new_framework_defaults.rb:21:in `<top (required)>'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:277:in `load'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:277:in `block in load'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:249:in `load_dependency'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:277:in `load'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:657:in `block in load_config_initializer'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/notifications.rb:170:in `instrument'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:656:in `load_config_initializer'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:614:in `block (2 levels) in <class:Engine>'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:613:in `each'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:613:in `block in <class:Engine>'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:32:in `instance_exec'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:32:in `run'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:61:in `block in run_initializers'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:228:in `block in tsort_each'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:431:in `each_strongly_connected_component_from'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:50:in `each'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:50:in `tsort_each_child'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:415:in `call'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:415:in `each_strongly_connected_component_from'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:349:in `block in each_strongly_connected_component'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:347:in `each'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:347:in `call'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:347:in `each_strongly_connected_component'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:226:in `tsort_each'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:205:in `tsort_each'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:60:in `run_initializers'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/application.rb:361:in `initialize!'
+  /home/ubuntutest1/RoR/config/environment.rb:5:in `<top (required)>'
+  config.ru:4:in `require_relative'
+  config.ru:4:in `block in <main>'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.5/lib/rack/builder.rb:55:in `instance_eval'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.5/lib/rack/builder.rb:55:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn.rb:56:in `eval'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn.rb:56:in `block in builder'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:795:in `build_app!'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:139:in `start'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/bin/unicorn:126:in `<top (required)>'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+  /home/ubuntutest1/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+I, [2018-09-07T13:37:48.898608 #32664]  INFO -- : Refreshing Gem list
+/home/ubuntutest1/RoR/config/initializers/new_framework_defaults.rb:21:in `<top (required)>': undefined method `halt_callback_chains_on_return_false=' for ActiveSupport:Module (NoMethodError)
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:277:in `load'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:277:in `block in load'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:249:in `load_dependency'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:277:in `load'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:657:in `block in load_config_initializer'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/notifications.rb:170:in `instrument'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:656:in `load_config_initializer'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:614:in `block (2 levels) in <class:Engine>'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:613:in `each'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:613:in `block in <class:Engine>'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:32:in `instance_exec'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:32:in `run'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:61:in `block in run_initializers'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:228:in `block in tsort_each'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:431:in `each_strongly_connected_component_from'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:50:in `each'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:50:in `tsort_each_child'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:415:in `call'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:415:in `each_strongly_connected_component_from'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:349:in `block in each_strongly_connected_component'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:347:in `each'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:347:in `call'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:347:in `each_strongly_connected_component'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:226:in `tsort_each'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:205:in `tsort_each'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:60:in `run_initializers'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/application.rb:361:in `initialize!'
+	from /home/ubuntutest1/RoR/config/environment.rb:5:in `<top (required)>'
+	from config.ru:4:in `require_relative'
+	from config.ru:4:in `block in <main>'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.5/lib/rack/builder.rb:55:in `instance_eval'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.5/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn.rb:56:in `eval'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn.rb:56:in `block in builder'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:795:in `build_app!'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:139:in `start'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/bin/unicorn:126:in `<top (required)>'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/bin/unicorn:23:in `<main>'
+I, [2018-09-07T13:41:30.924876 #471]  INFO -- : Refreshing Gem list
+/home/ubuntutest1/RoR/config/initializers/new_framework_defaults.rb:21:in `<top (required)>': undefined method `halt_callback_chains_on_return_false=' for ActiveSupport:Module (NoMethodError)
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:277:in `load'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:277:in `block in load'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:249:in `load_dependency'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:277:in `load'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:657:in `block in load_config_initializer'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/notifications.rb:170:in `instrument'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:656:in `load_config_initializer'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:614:in `block (2 levels) in <class:Engine>'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:613:in `each'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb:613:in `block in <class:Engine>'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:32:in `instance_exec'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:32:in `run'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:61:in `block in run_initializers'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:228:in `block in tsort_each'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:431:in `each_strongly_connected_component_from'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:50:in `each'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:50:in `tsort_each_child'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:415:in `call'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:415:in `each_strongly_connected_component_from'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:349:in `block in each_strongly_connected_component'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:347:in `each'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:347:in `call'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:347:in `each_strongly_connected_component'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:226:in `tsort_each'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/2.5.0/tsort.rb:205:in `tsort_each'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:60:in `run_initializers'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/application.rb:361:in `initialize!'
+	from /home/ubuntutest1/RoR/config/environment.rb:5:in `<top (required)>'
+	from config.ru:4:in `require_relative'
+	from config.ru:4:in `block in <main>'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.5/lib/rack/builder.rb:55:in `instance_eval'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.5/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn.rb:56:in `eval'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn.rb:56:in `block in builder'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:795:in `build_app!'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:139:in `start'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/bin/unicorn:126:in `<top (required)>'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/bin/unicorn:23:in `<main>'
+I, [2018-09-07T13:43:50.231062 #560]  INFO -- : Refreshing Gem list
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+F, [2018-09-07T13:43:56.394858 #560] FATAL -- : error adding listener addr=/home/ubuntutest1/RoR/shared/tmp/sockets/unicorn.sock
+/home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/socket_helper.rb:137:in `initialize': No such file or directory - connect(2) for /home/ubuntutest1/RoR/shared/tmp/sockets/unicorn.sock (Errno::ENOENT)
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/socket_helper.rb:137:in `new'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/socket_helper.rb:137:in `bind_listen'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:241:in `listen'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:851:in `block in bind_new_listeners!'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:851:in `each'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:851:in `bind_new_listeners!'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:140:in `start'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/bin/unicorn:126:in `<top (required)>'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/bin/unicorn:23:in `<main>'
+I, [2018-09-07T13:44:36.511813 #666]  INFO -- : Refreshing Gem list
+F, [2018-09-07T13:44:42.714374 #666] FATAL -- : error adding listener addr=/home/ubuntutest1/RoR/shared/tmp/sockets/unicorn.sock
+/home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/socket_helper.rb:137:in `initialize': No such file or directory - connect(2) for /home/ubuntutest1/RoR/shared/tmp/sockets/unicorn.sock (Errno::ENOENT)
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/socket_helper.rb:137:in `new'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/socket_helper.rb:137:in `bind_listen'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:241:in `listen'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:851:in `block in bind_new_listeners!'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:851:in `each'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:851:in `bind_new_listeners!'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:140:in `start'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/bin/unicorn:126:in `<top (required)>'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+	from /home/ubuntutest1/.rbenv/versions/2.5.0/bin/unicorn:23:in `<main>'
+I, [2018-09-07T13:45:11.434204 #724]  INFO -- : Refreshing Gem list
+I, [2018-09-07T13:45:17.805842 #724]  INFO -- : listening on addr=/home/ubuntutest1/RoR/shared/tmp/sockets/unicorn.sock fd=12
+I, [2018-09-07T13:45:17.869848 #724]  INFO -- : master process ready
+I, [2018-09-07T13:45:17.871991 #760]  INFO -- : worker=0 ready
+I, [2018-09-07T13:48:46.523260 #724]  INFO -- : SIGWINCH ignored because we're not daemonized
+I, [2018-09-07T13:49:05.126939 #724]  INFO -- : reaped #<Process::Status: pid 760 exit 0> worker=0
+I, [2018-09-07T13:49:05.127132 #724]  INFO -- : master complete
+I, [2018-09-07T13:51:03.124095 #1183]  INFO -- : Refreshing Gem list
+I, [2018-09-07T13:51:09.151800 #1183]  INFO -- : unlinking existing socket=/home/ubuntutest1/RoR/shared/tmp/sockets/unicorn.sock
+I, [2018-09-07T13:51:09.152574 #1183]  INFO -- : listening on addr=/home/ubuntutest1/RoR/shared/tmp/sockets/unicorn.sock fd=12
+I, [2018-09-07T13:51:09.163058 #1183]  INFO -- : master process ready
+I, [2018-09-07T13:51:09.165479 #1219]  INFO -- : worker=0 ready
+192.168.0.84 - - [07/Sep/2018:13:51:51 +0700] "GET / HTTP/1.0" 500 202371 7.4259
+I, [2018-09-07T13:52:07.467848 #1183]  INFO -- : reaped #<Process::Status: pid 1219 exit 0> worker=0
+I, [2018-09-07T13:52:07.468065 #1183]  INFO -- : master complete
+I, [2018-09-07T13:53:17.633745 #1417]  INFO -- : Refreshing Gem list
+I, [2018-09-07T13:53:23.882862 #1417]  INFO -- : unlinking existing socket=/home/ubuntutest1/RoR/shared/tmp/sockets/unicorn.sock
+I, [2018-09-07T13:53:23.883254 #1417]  INFO -- : listening on addr=/home/ubuntutest1/RoR/shared/tmp/sockets/unicorn.sock fd=12
+I, [2018-09-07T13:53:23.920783 #1417]  INFO -- : master process ready
+I, [2018-09-07T13:53:23.923202 #1458]  INFO -- : worker=0 ready
+192.168.0.84 - - [07/Sep/2018:13:53:39 +0700] "GET / HTTP/1.0" 200 - 6.6743
+192.168.0.84 - - [07/Sep/2018:13:53:39 +0700] "GET /posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.0" 200 - 0.0055
+192.168.0.84 - - [07/Sep/2018:13:53:39 +0700] "GET /scaffolds.self-31f852d89b3611a1f9df9822e00c25c42297edd00030a8cf147e25752699bd6f.css?body=1 HTTP/1.0" 200 1975 0.0043
+192.168.0.84 - - [07/Sep/2018:13:53:39 +0700] "GET /application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1 HTTP/1.0" 200 703 0.0046
+192.168.0.84 - - [07/Sep/2018:13:53:39 +0700] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.0" 200 293431 0.0195
+192.168.0.84 - - [07/Sep/2018:13:53:39 +0700] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.0" 200 21600 0.0057
+192.168.0.84 - - [07/Sep/2018:13:53:39 +0700] "GET /turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1 HTTP/1.0" 200 38521 0.0053
+192.168.0.84 - - [07/Sep/2018:13:53:39 +0700] "GET /action_cable.self-69fddfcddf4fdef9828648f9330d6ce108b93b82b0b8d3affffc59a114853451.js?body=1 HTTP/1.0" 200 20539 0.0042
+192.168.0.84 - - [07/Sep/2018:13:53:39 +0700] "GET /cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1 HTTP/1.0" 200 291 0.0048
+192.168.0.84 - - [07/Sep/2018:13:53:39 +0700] "GET /posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.0" 200 31 0.0027
+192.168.0.84 - - [07/Sep/2018:13:53:39 +0700] "GET /application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1 HTTP/1.0" 200 662 0.0053
+127.0.0.1 - - [07/Sep/2018:13:55:48 +0700] "GET / HTTP/1.0" 200 - 0.0919
+127.0.0.1 - - [07/Sep/2018:13:55:48 +0700] "GET /posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.0" 200 - 0.0056
+127.0.0.1 - - [07/Sep/2018:13:55:48 +0700] "GET /scaffolds.self-31f852d89b3611a1f9df9822e00c25c42297edd00030a8cf147e25752699bd6f.css?body=1 HTTP/1.0" 200 1975 0.0053
+127.0.0.1 - - [07/Sep/2018:13:55:48 +0700] "GET /application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1 HTTP/1.0" 200 703 0.0042
+127.0.0.1 - - [07/Sep/2018:13:55:48 +0700] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.0" 200 293431 0.0111
+127.0.0.1 - - [07/Sep/2018:13:55:48 +0700] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.0" 200 21600 0.0080
+127.0.0.1 - - [07/Sep/2018:13:55:48 +0700] "GET /turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1 HTTP/1.0" 200 38521 0.0211
+127.0.0.1 - - [07/Sep/2018:13:55:48 +0700] "GET /action_cable.self-69fddfcddf4fdef9828648f9330d6ce108b93b82b0b8d3affffc59a114853451.js?body=1 HTTP/1.0" 200 20539 0.0050
+127.0.0.1 - - [07/Sep/2018:13:55:48 +0700] "GET /cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1 HTTP/1.0" 200 291 0.0063
+127.0.0.1 - - [07/Sep/2018:13:55:48 +0700] "GET /posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.0" 200 31 0.0055
+127.0.0.1 - - [07/Sep/2018:13:55:48 +0700] "GET /application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1 HTTP/1.0" 200 662 0.0161
+I, [2018-09-07T14:28:59.883426 #1417]  INFO -- : reaped #<Process::Status: pid 1458 exit 0> worker=0
+I, [2018-09-07T14:28:59.883612 #1417]  INFO -- : master complete
