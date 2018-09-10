@@ -19,5 +19,8 @@ development:
 staging:
   <<: *default
 
+test:
+  <<: *default
+
 production:
   <<: *default
