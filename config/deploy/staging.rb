@@ -1,6 +1,6 @@
 set :stage, :staging
 set :rails_env, 'staging'
-set :branch, 'develop'
+set :branch, 'master'
 set :bundle_without, %i[test]
 
 set :sidekiq_options_per_process, ['-q default -q cron -q mailers']
