@@ -17,14 +17,14 @@ set :log_level, :debug
 set :preload_app, true
 
 namespace :deploy do
-  task upload_secret_key: [:set_rails_env] do
-    on roles(:web) do
-      execute :mkdir, '-p', "#{shared_path}/config"
+#  task upload_secret_key: [:set_rails_env] do
+#    on roles(:web) do
+#      execute :mkdir, '-p', "#{shared_path}/config"
 #      if File.exist? local_secret_key_path
 #        upload! local_secret_key_path, "#{shared_path}/config/secrets.yml.key"
 #      end
-    end
-  end
+#    end
+#  end
   before 'deploy:check:linked_files', 'deploy:upload_secret_key'
 
   desc 'ridgepole apply'
