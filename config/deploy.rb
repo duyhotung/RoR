@@ -5,7 +5,7 @@ application = 'ror'
 set :application, application
 set :repo_url, repo_url
 append :linked_dirs, 'log', 'tmp/sockets', 'tmp/pids', 'tmp/cache', 'vendor/bundle', 'public/system'
-append :linked_files, local_secret_key_path
+#append :linked_files, local_secret_key_path
 #append :linked_files, 'config/master.key'
 
 set :default_env, path: '/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH'
@@ -20,9 +20,9 @@ namespace :deploy do
   task upload_secret_key: [:set_rails_env] do
     on roles(:web) do
       execute :mkdir, '-p', "#{shared_path}/config"
-      if File.exist? local_secret_key_path
-        upload! local_secret_key_path, "#{shared_path}/config/secrets.yml.key"
-      end
+#      if File.exist? local_secret_key_path
+#        upload! local_secret_key_path, "#{shared_path}/config/secrets.yml.key"
+#      end
     end
   end
   before 'deploy:check:linked_files', 'deploy:upload_secret_key'

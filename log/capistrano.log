@@ -1,0 +1,6 @@
+# Logfile created on 2018-09-10 15:10:28 +0700 by logger.rb/61378
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-10 15:10:28 +0700 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [0d0d4cdd] Running /usr/bin/env mkdir -p /tmp as ec2-user@13.231.95.80
+ DEBUG [0d0d4cdd] Command: ( export PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" ; /usr/bin/env mkdir -p /tmp )
