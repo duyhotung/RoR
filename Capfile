@@ -3,6 +3,15 @@ require "capistrano/setup"
 
 # Include default deployment tasks
 require "capistrano/deploy"
+require 'capistrano/setup'
+require 'capistrano/deploy'
+require 'capistrano/scm/git'
+require 'capistrano/rbenv'
+require 'capistrano/rails'
+require 'capistrano/sidekiq'
+require 'capistrano3/unicorn'
+require 'seed-fu/capistrano3'
+
 
 # Load the SCM plugin appropriate to your project:
 #
