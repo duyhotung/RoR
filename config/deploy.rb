@@ -25,7 +25,7 @@ namespace :deploy do
 #      end
 #    end
 #  end
-  before 'deploy:check:linked_files', 'deploy:upload_secret_key'
+  before 'deploy:check:linked_files'#, 'deploy:upload_secret_key'
 
   desc 'ridgepole apply'
   task ridgepole_apply: [:set_rails_env] do
