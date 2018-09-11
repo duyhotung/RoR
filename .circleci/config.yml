@@ -6,6 +6,8 @@ jobs:
       - image: circleci/ruby:2.5.0-node
         environment:
           RAILS_ENV: test
+          BASTION_HOST: 13.231.95.80
+          BASTION_USER: ec2-user
       - image: circleci/mysql:5.7.18
         environment:
           MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
@@ -41,6 +43,6 @@ jobs:
           name: Deploy
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              bundle exec cap staging deploy
+              bundle exec VIA_BASTION=1 cap staging deploy
             fi
 

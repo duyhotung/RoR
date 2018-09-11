@@ -2,7 +2,7 @@ worker_processes 1
 timeout 300
 preload_app true
 
-shared_path = File.expand_path('../../shared')
+shared_path = File.expand_path('.')
 listen File.expand_path('tmp/sockets/unicorn.sock', shared_path)
 pid File.expand_path('tmp/pids/unicorn.pid', shared_path)
 
