@@ -2,7 +2,7 @@ if ENV['VIA_BASTION']
   require 'net/ssh/proxy/command'
 
   # Use a default host for the bastion, but allow it to be overridden
-  bastion_host = ENV['BASTION_HOST'] || 'bastion.example.com'
+  bastion_host = ENV['BASTION_HOST']
 
   # Use the local username by default
   bastion_user = ENV['BASTION_USER'] || ENV['USER']
