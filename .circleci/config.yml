@@ -16,6 +16,7 @@ jobs:
       - image: circleci/node:8.9
     steps:
       - checkout
+      - run: cat .circleci/ssh.config >> ~/.ssh/config
       - type: cache-restore
         key: bundle-{{ checksum "Gemfile.lock" }}
       - run: bundle install --path vendor/bundle
