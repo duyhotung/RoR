@@ -8,7 +8,7 @@ if ENV['VIA_BASTION']
   bastion_user = ENV['BASTION_USER'] || ENV['USER']
 
   # Configure Capistrano to use the bastion host as a proxy
-  ssh_command = "ssh -q #{bastion_user}@#{bastion_host} -CW %h:%p"
+  ssh_command = "ssh -q -o "StrictHostKeyChecking no" #{bastion_user}@#{bastion_host} -CW %h:%p"
   set :ssh_options, proxy: Net::SSH::Proxy::Command.new(ssh_command)
 end
 
