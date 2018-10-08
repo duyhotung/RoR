@@ -37,7 +37,7 @@ jobs:
 
       - type: store_test_results
         path: /tmp/test-results
-      - add_ssh_keys:
+      - add_ssh_keys
       - deploy:
           name: Deploy
           command: |
