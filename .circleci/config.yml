@@ -39,7 +39,7 @@ jobs:
         path: /tmp/test-results
       - add_ssh_keys
       - deploy:
-          name: Deploys
+          name: Deploy
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               VIA_BASTION=1 bundle exec cap staging deploy
