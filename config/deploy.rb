@@ -1,16 +1,16 @@
-if ENV['VIA_BASTION']
-  require 'net/ssh/proxy/command'
+#if ENV['VIA_BASTION']
+#  require 'net/ssh/proxy/command'
 
   # Use a default host for the bastion, but allow it to be overridden
-  bastion_host = ENV['BASTION_HOST']
+#  bastion_host = ENV['BASTION_HOST']
 
   # Use the local username by default
-  bastion_user = ENV['BASTION_USER'] || ENV['USER']
+#  bastion_user = ENV['BASTION_USER'] || ENV['USER']
 
   # Configure Capistrano to use the bastion host as a proxy
-  ssh_command = "ssh -o 'StrictHostKeyChecking=no' #{bastion_user}@#{bastion_host} -CW %h:%p"
-  set :ssh_options, proxy: Net::SSH::Proxy::Command.new(ssh_command)
-end
+#  ssh_command = "ssh -o 'StrictHostKeyChecking=no' #{bastion_user}@#{bastion_host} -CW %h:%p"
+#  set :ssh_options, proxy: Net::SSH::Proxy::Command.new(ssh_command)
+#end
 
 repo_url = 'git@github.com:duyhotung/RoR.git'
 application = 'ror'

@@ -16,7 +16,6 @@ jobs:
       - image: circleci/node:8.9
     steps:
       - checkout
-      - run: cat .circleci/ssh.config >> ~/.ssh/config
       - type: cache-restore
         key: bundle-{{ checksum "Gemfile.lock" }}
       - run: bundle install --path vendor/bundle
@@ -27,6 +26,7 @@ jobs:
       - run: bundle exec rails db:create
       - run: bundle exec rake db:migrate 
       - run: yarn install
+      - run: openssl enc -d -aes-256-cbc -in config/deploy/staging.rb.enc -out config/deploy/staging.rb -k $key  
       - type: shell
         command: |
           bundle exec rspec --profile 10 \
@@ -44,6 +44,6 @@ jobs:
           name: Deploy
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              VIA_BASTION=1 bundle exec cap staging deploy
+              bundle exec cap staging deploy
             fi
 
