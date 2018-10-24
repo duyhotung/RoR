@@ -37,9 +37,7 @@ jobs:
 
       - type: store_test_results
         path: /tmp/test-results
-      - add_ssh_keys:
-          fingerprints:
-            - "80:2d:a6:b8:db:95:4a:da:97:58:60:a4:8c:cb:57:24"
+      - add_ssh_keys
       - deploy:
           name: Deploy
           command: |
