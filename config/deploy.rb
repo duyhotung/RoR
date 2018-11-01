@@ -56,6 +56,7 @@ namespace :deploy do
   task :restart do
     invoke 'unicorn:restart'
   end
-  after 'deploy:publishing', 'deploy:restart'
+  after 'deploy:publishing', 'deploy:ridgepole_apply'
+  after 'deploy:published', 'deploy:restart'
 end
 
