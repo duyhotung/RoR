@@ -30,6 +30,7 @@ namespace :ridgepole do
     if Rails.env.development? || Rails.env.test?
       conf_path = "mysql2://#{username}@127.0.0.1:3306/#{database}"
     end
+    p "bundle exec ridgepole -c #{conf_path} -E #{Rails.env} --dump-with-default-fk-name #{option_str}"
     result = system "bundle exec ridgepole -c #{conf_path} -E #{Rails.env} --dump-with-default-fk-name #{option_str}"
     raise "Ridgepole Error - env #{Rails.env} conf_path #{conf_path} options: #{option_str}" unless result
   end
