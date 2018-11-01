@@ -51,7 +51,7 @@ namespace :deploy do
       end
     end
   end
-  after 'deploy:updated', 'deploy:ridgepole_apply'
+  after 'deploy:updated', 'ridgepole:apply'
 
   task :restart do
     invoke 'unicorn:restart'
