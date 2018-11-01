@@ -29,6 +29,8 @@ set :rbenv_ruby, File.read('.ruby-version').strip
 set :deploy_to, '/var/www'
 set :log_level, :debug
 set :preload_app, true
+set :rails_env, 'staging'
+
 
 namespace :deploy do
 #  task upload_secret_key: [:set_rails_env] do
@@ -38,7 +40,7 @@ namespace :deploy do
 #        upload! local_secret_key_path, "#{shared_path}/config/secrets.yml.key"
 #      end
 #    end
-  end
+#  end
 #  before 'deploy:check:linked_files', 'deploy:upload_secret_key'
 
   desc 'ridgepole apply'
