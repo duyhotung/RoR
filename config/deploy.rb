@@ -38,7 +38,7 @@ namespace :deploy do
 #        upload! local_secret_key_path, "#{shared_path}/config/secrets.yml.key"
 #      end
 #    end
-#  end
+  end
 #  before 'deploy:check:linked_files', 'deploy:upload_secret_key'
 
   desc 'ridgepole apply'
