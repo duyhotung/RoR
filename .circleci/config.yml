@@ -33,7 +33,7 @@ jobs:
             sudo apt-get -y -qq update
             sudo apt-get -y -qq install python-pip python-dev
             curl -O https://bootstrap.pypa.io/get-pip.py
-            python3.4 get-pip.py --user
+            python get-pip.py --user
             pip install awscli --upgrade --user
             aws --version
       - run: openssl enc -d -aes-256-cbc -in config/staging.rb.enc -out config/deploy/staging.rb -k $key  
