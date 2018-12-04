@@ -8,9 +8,6 @@ jobs:
           RAILS_ENV: test
           BASTION_HOST: 13.231.95.80
           BASTION_USER: ec2-user
-        dependencies :
-          pre:
-           - sudo pip install awscli
       - image: circleci/mysql:5.7.18
         environment:
           MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
@@ -30,6 +27,7 @@ jobs:
       - run: bundle exec rake db:migrate 
       - run: yarn install
       - run: mkdir -p config/deploy  
+      - run: sudo pip install awscli
       - run: openssl enc -d -aes-256-cbc -in config/staging.rb.enc -out config/deploy/staging.rb -k $key  
       - type: shell
         command: |
