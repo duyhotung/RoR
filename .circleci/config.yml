@@ -8,6 +8,9 @@ jobs:
           RAILS_ENV: test
           BASTION_HOST: 13.231.95.80
           BASTION_USER: ec2-user
+        dependencies :
+          pre:
+           - sudo pip install awscli
       - image: circleci/mysql:5.7.18
         environment:
           MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
@@ -43,6 +46,6 @@ jobs:
           name: Deploy
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              bundle exec cap staging deploy
+              sh script/deploy_staging.sh
             fi
 
