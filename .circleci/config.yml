@@ -27,7 +27,11 @@ jobs:
       - run: bundle exec rake db:migrate 
       - run: yarn install
       - run: mkdir -p config/deploy  
-      - run: sudo pip install awscli
+      - run:
+          name: install aws
+          command: |
+            sudo pip install awscli
+            aws --version
       - run: openssl enc -d -aes-256-cbc -in config/staging.rb.enc -out config/deploy/staging.rb -k $key  
       - type: shell
         command: |
