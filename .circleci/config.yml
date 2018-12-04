@@ -30,7 +30,11 @@ jobs:
       - run:
           name: install aws
           command: |
-            sudo pip install awscli
+            apt-get -y -qq update
+            apt-get -y -qq install python3.4-dev
+            curl -O https://bootstrap.pypa.io/get-pip.py
+            python3.4 get-pip.py --user
+            pip install awscli --upgrade --user
             aws --version
       - run: openssl enc -d -aes-256-cbc -in config/staging.rb.enc -out config/deploy/staging.rb -k $key  
       - type: shell
