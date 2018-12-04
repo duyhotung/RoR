@@ -29,6 +29,8 @@ set :rbenv_ruby, File.read('.ruby-version').strip
 set :deploy_to, '/var/www'
 set :log_level, :debug
 set :preload_app, true
+set :rails_env, 'staging'
+
 
 namespace :deploy do
 #  task upload_secret_key: [:set_rails_env] do
@@ -51,11 +53,12 @@ namespace :deploy do
       end
     end
   end
-  after 'deploy:updated', 'deploy:ridgepole_apply'
+  after 'deploy:updating', 'deploy:ridgepole_apply'
 
   task :restart do
     invoke 'unicorn:restart'
   end
-  after 'deploy:publishing', 'deploy:restart'
+  after 'deploy:publishing', 'deploy:ridgepole_apply'
+  after 'deploy:published', 'deploy:restart'
 end
 
